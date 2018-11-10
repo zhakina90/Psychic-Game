@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" type="text/css" media="screen" href="./assets/css/reset.css"/>
     <link rel="stylesheet" type="text/css" media="screen" href="./assets/css/style.css"/>
-    <script src="./assets/javascript/game.js"></script>
+    <script type=text/javascript src="./assets/javascript/game.js"></script>
   </head>
 
   <body>
@@ -24,89 +24,31 @@
     <div id="your-guesses">Your Guesses So Far:</div>
     <br>
 
-    <script type="text/javascript">
-      // This array holds the letter chosen by the user
-      var compLetters = [
-        "A",
-        "B",
-        "C",
-        "D",
-        "E",
-        "F",
-        "G",
-        "H",
-        "I",
-        "J",
-        "K",
-        "L",
-        "M",
-        "N",
-        "O",
-        "P",
-        "Q",
-        "R",
-        "S",
-        "T",
-        "U",
-        "V",
-        "W",
-        "X",
-        "Y",
-        "Z"
-      ];
-      var userInput = [];
-      var userGuesses = 9; 
-      var userLosses = 0;
-      var userWins = 0;
-      var lettersPressed = "";
-
-      // var chosenLetters = compLetters[Math.floor(Math.random() * compLetters.length)];
-      //user presses key
-
-      document.onkeyup = function(event) {
-        lettersPressed = lettersPressed + event.key;
-
-        var chosenLetters = compLetters[Math.floor(Math.random() * compLetters.length)];
-        console.log(chosenLetters);
-        document.getElementById("your-guesses").textContent = "Your Guesses So Far :" + lettersPressed;
-        //make a condition if userInput will 9 times
-        if (userGuesses > 0) {
-          document.getElementById("guesses-left").textContent = "Guesses Left :" + userGuesses;
-          userGuesses--;
-
-          console.log(userGuesses);
-        } else {
-          userGuesses = 9;
-          alert("your lost");
-          document.getElementById("guesses-left").textContent = "Guesses Left :" + userGuesses;
-          console.log(userGuesses);
-        }
-        
-        if (event.key === chosenLetters) {
-          document.getElementById("wins").textContent = "Wins :" + userWins;
-          userWins++;
-          alert("you win");
-          
-        } else {
-          document.getElementById("losses").textContent = "Losses :" + userLosses;
-          userLosses++;
-          alert("you lost");
-        }
-      }
-     
+    <!-- <script type="text/javascript"></script> -->
+      <!-- // This array holds the letter chosen by the user
       
+        // if (userGuesses > 0) {
+        //   document.getElementById("guesses-left").textContent = "Guesses Left :" + userGuesses;
+        //   userGuesses--;
 
-      // 4. Wins: (# of times the user has guessed the letter correctly)
+        //   console.log(userGuesses);
+        // // } else {
+        //   // userGuesses = 9;
+        //   alert("your lost");
+        //   document.getElementById("guesses-left").textContent = "Guesses Left :" + userGuesses;
+        //   console.log(userGuesses);
+        // }
+        
+        // if (event.key === chosenLetters) {
+        //   document.getElementById("wins").textContent = "Wins :" + userWins;
+        //   userWins++;
+        //   alert("you win");
+          
+        // } else if (userLosses = 9 && userGuesses = 0) {
+        //   reset();
 
-      // 5. Losses: (# of times the user has failed to guess the letter correctly after exhausting all guesses)
-
-      // 6. Guesses Left: (# of guesses left. This will update)
-
-      // 7. Your Guesses So Far: (the specific letters that the user typed. Display these until the user either wins or loses.)
-
-      // 8. When the player wins, increase the Wins counter and start the game over again (without refreshing the page).
-
-      // 9. When the player loses, increase the Losses counter and restart the game without a page refresh (just like when the user wins).
-    </script>
+        // } else { (userLosses = 9 && userGuesses === 0) 
+        //   document.getElementById(he user wins). -->
+    <!-- </script> -->
   </body>
 </html>
