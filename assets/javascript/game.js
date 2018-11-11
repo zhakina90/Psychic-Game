@@ -44,7 +44,7 @@ var compLetters = [
     lettersPressed = lettersPressed + event.key;
 
     var chosenLetters = compLetters[Math.floor(Math.random() * compLetters.length)];
-    console.log(chosenLetters);
+    // console.log(chosenLetters);
     document.getElementById("your-guesses").textContent = "Your Guesses So Far :" + lettersPressed;
     //make a condition if userInput will 9 times
     if (event.key === chosenLetters) {
@@ -55,12 +55,12 @@ var compLetters = [
     } else {
       // userGuesses = 9;
       alert("your lost");
-      document.getElementById("guesses-left").textContent = "Guesses Left :" + userGuesses;
+      document.getElementById("guesses-left").textContent = "Guesses Left :" + userGuesses ;
       userGuesses--;
       // else { (userLosses = 9 && userGuesses === 0) 
       document.getElementById("losses").textContent = "Losses :" + userLosses;
       userLosses++;
-      console.log(userGuesses);
+      // console.log(userGuesses);
     } if (userLosses == 9 && userGuesses == 0) 
       reset();
   }

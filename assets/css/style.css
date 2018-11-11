@@ -58,22 +58,27 @@ p {
     height: 50px;
     font-size: 60px;
     text-shadow: 0 0 3px #FF0000, 0 0 5px yellow;
-    margin-left: 210px;
+    margin-left: 110px;
     box-shadow: 5px 5px 5px red;
 }
 
 .far {
-    
+    clear: both;
+    position: sticky;
     text-align: center;
     color: green;
+    font-family: 'Sacramento', cursive;
+    margin-left: 10px;
 }
-@media only screen and (max-width: 640px) {
+
+/* 
+    @media only screen and (min-width: 320px) and (max-width: 480px) {
     
     }
-  
-@media only screen and (max-width: 768px) {
-      
+
+    @media only screen and (min-width : 768px) and (max-width : 1024px) {
     }
- @media only screen and (max-width: 980px) {
-  
+    @media only screen  and (min-width : 1224px) {
     }
+    @media only screen  and (min-width : 1824px) {
+    } */
